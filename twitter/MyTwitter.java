@@ -2,6 +2,7 @@ package twitter;
 import java.util.Vector;
 import repositorio.IRepositorioUsuario;
 import Perfis.Perfil;
+import Perfis.Exceptions.PAException;
 import Perfis.Exceptions.PDException;
 import Perfis.Exceptions.PEException;
 import Perfis.Exceptions.PIException;
@@ -36,6 +37,23 @@ public class MyTwitter implements ITwitter {
             }
             else{
                 throw new PDException(conta);
+            }
+        }
+        else{
+            throw new PIException(conta);
+        }
+    }
+
+    public void reativarPerfil(String usuario) throws PIException, PAException{
+        
+        Perfil conta = repositorio.buscar(usuario);
+        if(conta != null){
+            if(conta.isAtivo() == false){
+                conta.setAtivo(true);
+                System.out.println("Perfil Reativado com Sucesso!!");
+            }
+            else{
+                throw new PAException(conta);
             }
         }
         else{

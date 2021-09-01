@@ -24,7 +24,7 @@ public class RepositorioVector  implements IRepositorioUsuario{
     }
 
     public Perfil buscar(String usuario) {
-        for(int i=0 ; i<=contas.size() ; i++){
+        for(int i=0 ; i<contas.size() ; i++){
             if(this.contas.get(i).getUsuario().equals(usuario)){
                 return contas.get(i);
             }

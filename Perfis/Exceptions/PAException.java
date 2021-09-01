@@ -2,11 +2,11 @@ package Perfis.Exceptions;
 
 import Perfis.Perfil;
 
-public class PDException extends Exception {
+public class PAException extends Exception {
     private Perfil usuario;
 
-    public PDException(Perfil usuario) {
-        super("Perfil Desativado");
+    public PAException(Perfil usuario) {
+        super("Perfil Ativado");
         this.setUsuario(usuario);
     }
 
@@ -19,8 +19,6 @@ public class PDException extends Exception {
     }
 
     public String GetMessage(){
-        return "Erro!! O perfil está desativado, tente outra opção.";
+        return "Erro!! O perfil já está ativado, tente outra opção.";
     }
-
-    
 }

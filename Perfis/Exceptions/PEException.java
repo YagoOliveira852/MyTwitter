@@ -11,7 +11,7 @@ public class PEException extends Exception{
     }
 
     public String GetMessage(){
-        return "Erro!! O perfil" + this.usuario + "já existe, tente outra opção.";
+        return "Erro!! O perfil já existe, tente outra opção.";
     }
     
     public Perfil getUsuario() {
