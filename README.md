@@ -1,18 +1,23 @@
-## Getting Started
+# MyTwitter
+Projeto final para a disciplina de Programação Orientada a Objetos 2021.1 da Universidade Federal do Ceará.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+MyTwitter é um projeto que visa desenvolver uma aplicação semelhante com a do mecanismo do Twitter, de publicar mensagens curtas e diretas e criar um meio virtual de interação social.
 
-## Folder Structure
+## Links úteis
+- Parte 1 - Explicação do código-fonte: [MyTwitter - Código-fonte](https://youtu.be/nDhNeIpfEM4)
+- Parte 2 - Demonstração das funcionalidades: [Código em funcionamento](https://www.youtube.com/watch?v=QO3A-2LlgbY)
 
-The workspace contains two folders by default, where:
+## Requisitos recomendados
+Ter instalação de java na máquina do usuário.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Alguma IDE para facilitar a edição e utilização dos códigos, como:
+- Visual Studio Code
+  - Extensão: Extension Pack for Java
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Preparando ambiente e rodando o programa
+1. Abra o projeto em alguma das IDEs.
+2. Vá em Main.java e execute o arquivo.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### E pronto, o programa estará rodando no console!
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+> Se desejar executar no repl.it, basta subir os arquivos, preservando os pacotes incluídos na mesma.

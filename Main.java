@@ -136,7 +136,7 @@ class Main {
 
           try {
             for(Tweet tweet : mytwitter.timeline(usuario)){
-              System.out.println("\nO usuário "+ tweet.getUsario() + " publicou: \n" +tweet.getMensagem());
+              System.out.println("\nO usuário @"+ tweet.getUsario() + " publicou: \n" +tweet.getMensagem());
             }
           } 
           catch (Exception e) {
@@ -150,7 +150,7 @@ class Main {
 
           try {
             for(Tweet tweet : mytwitter.tweets(usuario)){
-              System.out.println("\nO usuário "+ tweet.getUsario() + " publicou: \n" +tweet.getMensagem());
+              System.out.println("\nO usuário @"+ tweet.getUsario() + " publicou: \n" +tweet.getMensagem());
             }
           } 
           catch (Exception e) {
@@ -194,7 +194,7 @@ class Main {
           try {
             System.out.println("Os seguidores: \n");
             for(Perfil perfil : mytwitter.seguidores(usuario)){
-              System.out.println(perfil.getUsuario());
+              System.out.println("@"+perfil.getUsuario());
             }
           } 
           catch (Exception e) {
@@ -209,7 +209,7 @@ class Main {
           try {
             System.out.println("Os seguidos: \n");
             for(Perfil perfil : mytwitter.seguidos(usuario)){
-              System.out.println(perfil.getUsuario());
+              System.out.println("@"+perfil.getUsuario());
             }
           } 
           catch (Exception e) {
@@ -218,6 +218,7 @@ class Main {
         break;
 
         case 0:
+          System.out.println("Obrigado por usar o mytwitter!!");
           System.exit(0);
         break;
 
