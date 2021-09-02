@@ -120,7 +120,8 @@ class Main {
           System.out.println("Digite o nome de usuário:");
           usuario = entrada.next();
           System.out.println("Digite a mensagem a ser tweetada:");
-          mensagem = entrada.next();
+          entrada.nextLine();
+          mensagem = entrada.nextLine();
 
           try {
             mytwitter.tweetar(usuario, mensagem);
